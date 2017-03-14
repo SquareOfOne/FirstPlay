@@ -6,6 +6,7 @@ class Numbers
 private:
     int numberOfNumbers;        //array length
     int *numberRow;             //pointer for array.
+    int *oldNumbers;       //save old numbers, when expanding to new array.
 public:
     Numbers();                  //constructor. need to exist.
     void addNumber();           //create the actual array.

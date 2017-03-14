@@ -144,7 +144,7 @@ compiler_clean:
 
 ####### Compile
 
-debug\main.obj: ..\DynamicArray\main.cpp 
+debug\main.obj: ..\DynamicArray\main.cpp ..\DynamicArray\numbers.h
 
 debug\numbers.obj: ..\DynamicArray\numbers.cpp ..\DynamicArray\numbers.h
 

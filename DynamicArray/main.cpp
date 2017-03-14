@@ -14,8 +14,13 @@ int main(void)
         bestArray.addNumber();
     if (command=="print")
         bestArray.print();
+    if (command=="find")
+        bestArray.findBigSmall();
     if (command=="quit")
         break;
+    else{
+        cout<<"invalid command\n";
+    }
     cout<< "Enter new command\n";
     }
     return 0;

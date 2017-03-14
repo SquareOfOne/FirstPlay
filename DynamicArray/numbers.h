@@ -10,7 +10,7 @@ private:
 public:
     Numbers();
     void addNumber();
-    void shrink();
+    void findBigSmall();
     void print();
 };
 

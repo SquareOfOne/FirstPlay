@@ -3,7 +3,6 @@
 using namespace std;
 Numbers::Numbers()
 {
-
 }
 void Numbers::addNumber(){
     cout<<"How many numbers would you like to add?\n";
@@ -16,6 +15,21 @@ void Numbers::addNumber(){
 void Numbers::print(){
     for (int i=0;i<numberOfNumbers;i++)
         cout<<"Number "<< i<< " is " <<numberRow[i]<<"\n";
+}
+void Numbers::findBigSmall(){
+    int big, small;
+    for (int i=0;i<numberOfNumbers;i++){
+        if (i==0){
+           big=numberRow[i];
+           small=numberRow[i];
+        }
+        else if (i<small)
+            small=numberRow[i];
+        else if (i>big)
+            big=numberRow[i];
+    }
+    cout<<"Biggest number is "<< big<< "\n";
+    cout<<"Smallest number is"<< small<< "\n";
 }
 
 

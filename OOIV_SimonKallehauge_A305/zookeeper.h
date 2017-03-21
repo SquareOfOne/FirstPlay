@@ -15,7 +15,6 @@ private:
     void openCage();
 public:
     zookeeper();
-    bool hungry();
     vector<string>getData();
 };
 

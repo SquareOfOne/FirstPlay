@@ -4,15 +4,11 @@
 
 using namespace std;
 zookeeper::zookeeper(){
-    openZoo("C:\\Users\\Simon\\Desktop\\animals.txt");
+    openZoo("C:\\Users\\Bot\\Desktop\\animals.txt");
     if (ready)
         openCage();
     else
         cout<<"The gate is stuck\n";
-}
-
-bool zookeeper::hungry(){
-   return ready;
 }
 
 std::vector<string> zookeeper::getData() {

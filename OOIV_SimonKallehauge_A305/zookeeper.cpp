@@ -4,7 +4,7 @@
 
 using namespace std;
 zookeeper::zookeeper(){
-    openZoo("C:\\Users\\Bot\\Desktop\\animals.txt");
+    openZoo("C:\\Users\\Simon\\Desktop\\animals.txt");
     if (ready)
         openCage();
     else
@@ -32,7 +32,7 @@ void zookeeper::openCage(){
     if (ready){
         while (inputAnimals>>temp){
             cout<<"The animal "<<temp<<" has arrived in the zoo\n";
+            animalData.push_back(temp);
         }
-        animalData.push_back(temp);
     }
 }
